@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+	<head>
+		<title> 動物將棋 どうぶつ しょうぎ </title>
+		<link rel="stylesheet" href="/css/dobutsu-grid.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</head>
+	<body>
+	<br>
+	<div id="waiting"></div>
+	<br>
+	<div id="zone">
+
+  	<!-- game -->
+		<div class="game" id="one">
+			<div class="row">
+				<div class="square img1">
+					<div class="cell enemyGiraffe">
+					</div>
+				</div>
+				<div class="square img2">
+					<div class="cell enemyLion">
+					</div>
+				</div>
+				<div class="square img3">
+					<div class="cell enemyElephant">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="square img4">
+					<div class="cell">
+					</div>
+				</div>
+				<div class="square img5">
+					<div class="cell enemyChick">
+					</div>
+				</div>
+				<div class="square img6">
+					<div class="cell">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="square img7">
+					<div class="cell">
+					</div>
+				</div>
+				<div class="square img8">
+					<div class="cell playerChick">
+					</div>
+				</div>
+				<div class="square img9">
+					<div class="cell">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="square img10">
+					<div class="cell playerElephant">
+					</div>
+				</div>
+				<div class="square img11">
+					<div class="cell playerLion">
+					</div>
+				</div>
+				<div class="square img12">
+					<div class="cell playerGiraffe">
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div id="bench">
+			<div id="enemyBench">
+				<h2> 對手吃掉的棋子 </h2>
+				<div class="enemyRow">
+					<div class="square">
+						<div class="cell" id="playerChick">
+						</div>
+					</div>
+				</div>
+
+				<div class="enemyRow">
+					<div class="square">
+						<div class="cell" id="playerGiraffe">
+						</div>
+					</div>
+				</div>
+
+				<div class="enemyRow">
+					<div class="square">
+						<div class="cell" id="playerElephant">
+						</div>
+					</div>
+				</div>	
+
+				<div class="enemyRow">
+					<div class="square">
+						<div class="cell" id="playerChickTwo">
+						</div>
+					</div>
+				</div>
+
+				<div class="enemyRow">
+					<div class="square">
+						<div class="cell" id="playerGiraffeTwo">
+						</div>
+					</div>
+				</div>
+
+				<div class="enemyRow">
+					<div class="square">
+						<div class="cell" id="playerElephantTwo">
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Debug Panel -->
+			<!-- 		
+			<div id="debugPanel">
+				<textarea rows="5" cols="70" id="debug">
+					
+				</textarea>
+			</div>	
+	 		-->
+
+			<div id="playerBench">
+				<h2> 你吃掉的棋子 </h2>
+				<div class="playerRow">
+					<div class="square">
+						<div class="cell" id="enemyChick">
+						</div>
+					</div>
+				</div>
+
+				<div class="playerRow">
+					<div class="square">
+						<div class="cell" id="enemyGiraffe">
+						</div>
+					</div>
+				</div>
+
+				<div class="playerRow">
+					<div class="square">
+						<div class="cell" id="enemyElephant">
+						</div>
+					</div>
+				</div>	
+
+				<div class="playerRow">
+					<div class="square">
+						<div class="cell" id="enemyChickTwo">
+						</div>
+					</div>
+				</div>
+
+				<div class="playerRow">
+					<div class="square">
+						<div class="cell" id="enemyGiraffeTwo">
+						</div>
+					</div>
+				</div>
+
+				<div class="playerRow">
+					<div class="square">
+						<div class="cell" id="enemyElephantTwo">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<br><br>
+	<script src="/js/dobutsu.js"></script>
+	</body>
+</html>
